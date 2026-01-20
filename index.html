@@ -56,7 +56,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center gap-3 cursor-pointer" onclick="switchTab('profile')">
-                    <div class="w-10 h-10 bg-gradient-to-br from-brand-500 to-brand-600 rounded-xl flex items-center justify-center text-white shadow-glow"><span class="font-bold text-xl">R</span></div>
+                    <img src="favicon.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" alt="Logo" class="w-10 h-10 rounded-xl shadow-glow object-cover">
+                    <div class="w-10 h-10 bg-gradient-to-br from-brand-500 to-brand-600 rounded-xl flex items-center justify-center text-white shadow-glow hidden"><span class="font-bold text-xl">R</span></div>
+                    
                     <div class="flex flex-col"><span class="font-bold text-lg leading-tight text-slate-900">Rahmat<span class="text-brand-500">.Dev</span></span><span class="text-[10px] font-semibold text-slate-400 uppercase tracking-widest">Portfolio</span></div>
                 </div>
                 <div class="flex p-1.5 bg-white/60 rounded-xl border border-white/50 shadow-sm backdrop-blur-md">
@@ -78,9 +80,17 @@
                     <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">Halo, Saya <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-600">Rahmat Ardiansyah</span></h1>
                     <p class="text-lg sm:text-xl text-slate-500 leading-relaxed max-w-2xl">Mahasiswa Teknik Informatika di <strong class="text-slate-800">Universitas Muhammadiyah Riau</strong> dengan ketertarikan mendalam pada pengembangan <span class="inline-block bg-brand-50 text-brand-700 px-2 py-0.5 rounded font-semibold">UI/UX Design</span> dan <span class="inline-block bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded font-semibold">Artificial Intelligence</span>.</p>
                     
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-card flex items-center gap-4 hover:shadow-lg hover:-translate-y-1 transition-all group"><div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center"><i class="ph ph-student text-2xl"></i></div><div><p class="text-xs text-slate-400 uppercase font-bold">NIM</p><p class="text-lg font-bold text-slate-800">220405010</p></div></div>
-                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-card flex items-center gap-4 hover:shadow-lg hover:-translate-y-1 transition-all group"><div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center"><i class="ph ph-buildings text-2xl"></i></div><div><p class="text-xs text-slate-400 uppercase font-bold">Universitas</p><p class="text-lg font-bold text-slate-800">UMRI (2022)</p></div></div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-card flex items-center gap-4 hover:shadow-lg hover:-translate-y-1 transition-all group">
+                            <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center"><i class="ph ph-map-pin text-2xl"></i></div>
+                            <div><p class="text-xs text-slate-400 uppercase font-bold">Domisili</p><p class="text-lg font-bold text-slate-800">Pekanbaru, Riau</p></div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-card flex items-center gap-4 hover:shadow-lg hover:-translate-y-1 transition-all group sm:col-span-2 lg:col-span-1">
+                            <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center"><i class="ph ph-buildings text-2xl"></i></div>
+                            <div><p class="text-xs text-slate-400 uppercase font-bold">Universitas</p><p class="text-lg font-bold text-slate-800">UMRI (2022)</p></div>
+                        </div>
                     </div>
                     
                     <div class="pt-4 border-t border-slate-200">
@@ -101,7 +111,7 @@
                     <div class="absolute top-0 right-10 w-72 h-72 bg-brand-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
                     <div class="absolute bottom-0 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style="animation-delay: 2s"></div>
                     <div class="relative w-72 h-72 sm:w-96 sm:h-96 rounded-[3rem] border-8 border-white/80 shadow-2xl overflow-hidden bg-gradient-to-b from-brand-50 to-brand-100 z-10 rotate-3 hover:rotate-0 transition-transform duration-500">
-                        <img src="rahmat1.png" class="w-full h-full object-cover">
+                        <img src="rahmat1.png" alt="Rahmat Ardiansyah" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
@@ -111,7 +121,17 @@
             <div class="text-center mb-16 max-w-3xl mx-auto">
                 <div class="inline-flex items-center justify-center p-3 bg-white rounded-2xl mb-6 shadow-sm border border-brand-100 text-brand-600"><i class="ph ph-brain text-4xl"></i></div>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">NeuroScan <span class="text-brand-500">AI Dashboard</span></h2>
-                <p class="text-lg text-slate-500">Sistem cerdas pendukung keputusan klinis untuk klasifikasi tumor otak berbasis citra MRI.</p>
+                
+                <p class="text-lg text-slate-500 leading-relaxed">
+                    Sistem cerdas pendukung keputusan klinis berbasis <strong>Deep Learning (VGG16)</strong> yang dirancang untuk mendeteksi dan mengklasifikasikan 4 kondisi otak:
+                    <br>
+                    <span class="inline-flex gap-2 mt-3 flex-wrap justify-center">
+                        <span class="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-sm font-bold border border-red-100">Glioma Tumor</span>
+                        <span class="px-3 py-1 bg-orange-50 text-orange-600 rounded-lg text-sm font-bold border border-orange-100">Meningioma Tumor</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-600 rounded-lg text-sm font-bold border border-purple-100">Pituitary Tumor</span>
+                        <span class="px-3 py-1 bg-emerald-50 text-emerald-600 rounded-lg text-sm font-bold border border-emerald-100">No Tumor (Normal)</span>
+                    </span>
+                </p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
